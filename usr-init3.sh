@@ -7,4 +7,5 @@ apt-get install neofetch -y
 rm /etc/motd
 touch /etc/motd
 touch /root/.hushlogin
-bash -c $'echo "neofetch" >> /etc/profile.d/mymotd.sh && chmod +x /etc/profile.d/mymotd.sh'
+bash -c $'if [ ! -f "/etc/profile.d/mymotd.sh" ]; then echo "neofetch" > /etc/profile.d/mymotd.sh; fi && chmod +x /etc/profile.d/mymotd.sh'
+
