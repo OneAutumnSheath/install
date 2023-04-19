@@ -2,8 +2,8 @@
 wget https://cdn.oneautumnsheath.de/bashrc -O /root/.bashrc
 chmod -x /etc/update-motd.d/*
 apt-get update
-apt-get full-upgrade
-apt-get install neofetch
+apt-get full-upgrade -y
+apt-get install neofetch -y
 rm /etc/motd
 touch /etc/motd
 touch /root/.hushlogin
